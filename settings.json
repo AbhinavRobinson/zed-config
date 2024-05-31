@@ -1,0 +1,94 @@
+{
+  // remove BS
+  "chat_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "show_copilot_suggestions": false,
+  "show_call_status_icon": false,
+  "assistant": {
+    "version": "1",
+    "enabled": false,
+    "button": false
+  },
+  "assistant_v2": {
+    "enabled": false,
+    "button": false
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  // settings
+  "nightly": {
+    "enabled": true,
+    "channel": "stable"
+  },
+  "bracket_pairing": "always",
+  "inlay_hints": {
+    "enabled": false
+  },
+  "cursor_blink": true,
+  "notification_panel": {
+    "dock": "right"
+  },
+  "base_keymap": "VSCode",
+  "tab_bar": {
+    "show": false
+  },
+  "theme": "Horizon",
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "vim_mode": true,
+  "ui_font_size": 12,
+  "buffer_font_size": 14,
+  "terminal": {
+    "dock": "bottom",
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 12
+  },
+  "eslint": {
+    "enabled": true,
+    "autoFixOnSave": true,
+    "autoFixOnFormat": true,
+    "autoFixOnFormatDelay": 1500
+  },
+  "language_overrides": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true
+      }
+    }
+  },
+  "lsp": {
+    "typescript-language-server": {
+      "experimental": {
+        "enableProjectDiagnostics": true
+      },
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "eslint_d",
+          "arguments": [
+            "--stdin",
+            "--stdin-filename",
+            "{buffer_path}",
+            "--fix-to-stdout"
+          ]
+        }
+      }
+    }
+  }
+}
