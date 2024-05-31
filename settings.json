@@ -38,7 +38,7 @@
   "tab_bar": {
     "show": false
   },
-  "theme": "Horizon",
+  "theme": "Modest Dark",
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "vim_mode": true,
   "ui_font_size": 12,
@@ -48,29 +48,29 @@
     "font_family": "JetBrainsMono Nerd Font",
     "font_size": 12
   },
-  "eslint": {
-    "enabled": true,
-    "autoFixOnSave": true,
-    "autoFixOnFormat": true,
-    "autoFixOnFormatDelay": 1500
-  },
   "language_overrides": {
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      },
+      "format_on_save": "on",
+      "inlay_hints": {
+        "enabled": true
       }
     },
     "TypeScript": {
       "code_actions_on_format": {
         "source.organizeImports": true,
         "source.fixAll.eslint": true
-      }
+      },
+      "format_on_save": "on"
     },
     "TSX": {
       "code_actions_on_format": {
         "source.organizeImports": true,
         "source.fixAll.eslint": true
-      }
+      },
+      "format_on_save": "on"
     }
   },
   "lsp": {
