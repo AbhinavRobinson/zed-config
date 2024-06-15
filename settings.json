@@ -38,15 +38,15 @@
   "tab_bar": {
     "show": false
   },
-  "theme": "Modest Dark",
-  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "theme": "Graphene",
+  "buffer_font_family": "IBM Plex Mono",
   "vim_mode": true,
-  "ui_font_size": 12,
+  "ui_font_size": 14,
   "buffer_font_size": 14,
   "terminal": {
     "dock": "bottom",
-    "font_family": "JetBrainsMono Nerd Font",
-    "font_size": 12
+    "font_family": "FiraCode Nerd Font Mono",
+    "font_size": 14
   },
   "language_overrides": {
     "JavaScript": {
@@ -60,14 +60,12 @@
     },
     "TypeScript": {
       "code_actions_on_format": {
-        "source.organizeImports": true,
         "source.fixAll.eslint": true
       },
       "format_on_save": "on"
     },
     "TSX": {
       "code_actions_on_format": {
-        "source.organizeImports": true,
         "source.fixAll.eslint": true
       },
       "format_on_save": "on"
